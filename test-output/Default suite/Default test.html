@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 16 14:14:30 GMT+03:00 2024</td>
+<td>Started on:</td><td>Sat Feb 17 15:54:52 GMT+03:00 2024</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19091 ms)</td>
+<tr><td>Total time:</td><td>77 seconds (77380 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,13 +77,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='MyClass1.test3()'><b>test3</b><br>Test class: MyClass1</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
 	at java.base/java.util.Objects.checkIndex(Objects.java:361)
 	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at MyClass1.test3(MyClass1.java:101)
+	at MyClass1.test3(MyClass1.java:116)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,14 +112,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1195064186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1195064186'><pre>java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+</pre></div><a href='#' onClick='toggleBox("stack-trace1661161169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661161169'><pre>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
 	at java.base/java.util.Objects.checkIndex(Objects.java:361)
 	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at MyClass1.test3(MyClass1.java:101)
+	at MyClass1.test3(MyClass1.java:116)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,8 +149,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>16</td>
-<td>MyClass1@1ca25c47</td></tr>
+<td>21</td>
+<td>MyClass1@6d1d4d7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MyClass1.Test1()'><b>Test1</b><br>Test class: MyClass1</td>
+<td></td>
+<td>15</td>
+<td>MyClass1@6d1d4d7</td></tr>
+<tr>
+<td title='MyClass1.test2()'><b>test2</b><br>Test class: MyClass1</td>
+<td></td>
+<td>12</td>
+<td>MyClass1@6d1d4d7</td></tr>
+<tr>
+<td title='MyClass1.test4()'><b>test4</b><br>Test class: MyClass1</td>
+<td></td>
+<td>21</td>
+<td>MyClass1@6d1d4d7</td></tr>
 </table><p>
 </body>
 </html>

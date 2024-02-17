@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-16T14:14:30 GMT+03:00" name="Default suite" finished-at="2024-02-16T14:14:49 GMT+03:00" duration-ms="19091">
+  <suite started-at="2024-02-17T15:54:52 GMT+03:00" name="Default suite" finished-at="2024-02-17T15:56:09 GMT+03:00" duration-ms="77380">
     <groups>
     </groups>
-    <test started-at="2024-02-16T14:14:30 GMT+03:00" name="Default test" finished-at="2024-02-16T14:14:49 GMT+03:00" duration-ms="19091">
+    <test started-at="2024-02-17T15:54:52 GMT+03:00" name="Default test" finished-at="2024-02-17T15:56:09 GMT+03:00" duration-ms="77380">
       <class name="MyClass1">
-        <test-method is-config="true" signature="mySetup()[pri:0, instance:MyClass1@1ca25c47]" started-at="2024-02-16T14:14:30 GMT+03:00" name="mySetup" finished-at="2024-02-16T14:14:33 GMT+03:00" duration-ms="2560" status="PASS">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:MyClass1@6d1d4d7]" started-at="2024-02-17T15:54:52 GMT+03:00" name="mySetup" finished-at="2024-02-17T15:54:58 GMT+03:00" duration-ms="5646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySetup -->
-        <test-method signature="test3()[pri:0, instance:MyClass1@1ca25c47]" started-at="2024-02-16T14:14:33 GMT+03:00" name="test3" finished-at="2024-02-16T14:14:49 GMT+03:00" duration-ms="16498" status="FAIL">
+        <test-method signature="Test1()[pri:1, instance:MyClass1@6d1d4d7]" started-at="2024-02-17T15:54:58 GMT+03:00" name="Test1" finished-at="2024-02-17T15:55:13 GMT+03:00" duration-ms="15138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="test2()[pri:2, instance:MyClass1@6d1d4d7]" started-at="2024-02-17T15:55:13 GMT+03:00" name="test2" finished-at="2024-02-17T15:55:26 GMT+03:00" duration-ms="12989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:3, instance:MyClass1@6d1d4d7]" started-at="2024-02-17T15:55:26 GMT+03:00" name="test3" finished-at="2024-02-17T15:55:48 GMT+03:00" duration-ms="21946" status="FAIL">
           <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[Index 2 out of bounds for length 2]]>
+              <![CDATA[Index 1 out of bounds for length 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
 at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
 at java.base/java.util.Objects.checkIndex(Objects.java:361)
 at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at MyClass1.test3(MyClass1.java:101)
+at MyClass1.test3(MyClass1.java:116)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,6 +66,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:4, instance:MyClass1@6d1d4d7]" started-at="2024-02-17T15:55:48 GMT+03:00" name="test4" finished-at="2024-02-17T15:56:09 GMT+03:00" duration-ms="21638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
       </class> <!-- MyClass1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
